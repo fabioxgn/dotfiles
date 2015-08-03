@@ -1,3 +1,6 @@
 [submodule "vim/colors/molokai"]
 	path = vim/colors/molokai
 	url = git@github.com:fatih/molokai.git
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = git@github.com:VundleVim/Vundle.vim.git
