@@ -2,6 +2,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" displays line numbers
+set number
+
 "remove toolbar
 set guioptions-=T  
 
