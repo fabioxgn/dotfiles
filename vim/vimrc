@@ -16,23 +16,31 @@ Plugin 'scrooloose/syntastic'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Syntatic
+" Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_go_checkers=['']
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
 " My Custom configs
 set number " displays line numbers
-set guioptions-=T "remove toolbar
+set guioptions-=T "removes toolbar
+set guioptions-=m "removes menu bar"
 set ts=2 " Set tabs to 2 spaces
 
 "molokai color scheme
 colorscheme molokai/colors/molokai
 
 "bigger font
-set guifont=Monospace\ 11
+"set guifont=Monospace\ 11
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12 
