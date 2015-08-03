@@ -1,0 +1,12 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+"remove toolbar
+set guioptions-=T  
+
+"molokai color scheme
+colorscheme molokai/colors/molokai
+
+"bigger font
+set guifont=Monospace\ 11
