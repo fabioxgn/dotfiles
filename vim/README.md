@@ -6,7 +6,7 @@ Needs to add `GOPATH` to `~/.profile` for gvim to find it.
 
 ### fonts
 
-#### Poweline 
+#### Poweline
 
 Poweline fonts required by vim-airline: https://github.com/powerline/fonts
 

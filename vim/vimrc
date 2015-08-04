@@ -11,6 +11,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/syntastic'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,6 +32,9 @@ let g:syntastic_check_on_wq = 0
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+" vim-better-whitespace
+autocmd FileType * autocmd BufWritePre <buffer> StripWhitespace
 
 " My Custom configs
 set number " displays line numbers
