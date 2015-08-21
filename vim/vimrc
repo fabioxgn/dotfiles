@@ -9,13 +9,17 @@ call vundle#begin()
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
-Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-sleuth'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+filetype on
+syntax enable
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -36,15 +40,23 @@ let g:airline_powerline_fonts = 1
 " vim-better-whitespace
 autocmd FileType * autocmd BufWritePre <buffer> StripWhitespace
 
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " My Custom configs
 set number " displays line numbers
 set guioptions-=T "removes toolbar
 set guioptions-=m "removes menu bar"
 set ts=2 " Set tabs to 2 spaces
+set sw=2
+set wildmenu " Shows popup menu on <tab> completion
+
+autocmd FileType ruby set expandtab
 
 "molokai color scheme
 colorscheme molokai/colors/molokai
 
 "bigger font
 "set guifont=Monospace\ 11
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12 
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
