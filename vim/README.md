@@ -1,3 +1,8 @@
+### Windows
+
+- Install Vundle: https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows
+  - Tutorial says to clone Vundle in %USERPROFILE% then use `$VIM/vimfiles/bundle/Vundle.vim/` this did not work, using `$HOME` instead of `$VIM` works.
+
 ### vim-go
 
 https://github.com/fatih/vim-go
