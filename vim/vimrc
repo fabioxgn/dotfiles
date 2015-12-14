@@ -3,11 +3,11 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 if has('win32')
-	set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
-	call vundle#begin('$HOME/vimfiles/bundle/')
+  set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+  call vundle#begin('$HOME/vimfiles/bundle/')
 else
-	set rtp+=~/.vim/bundle/Vundle.vim
-	call vundle#begin()
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
 endif
 
 " Plugins:
@@ -23,7 +23,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,6 +69,9 @@ let g:rubycomplete_rails = 1
 " vim-session
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
+" do not persist font or color, too confusing
+let g:session_persist_font = 0
+let g:session_persist_colors = 0
 
 " My Custom configs
 set number " displays line numbers
@@ -82,10 +84,12 @@ set wildmenu " Shows popup menu on <tab> completion
 autocmd FileType ruby set expandtab
 
 "molokai color scheme
-if has('unix')
-	colorscheme molokai/colors/molokai
-endif
+colorscheme molokai/colors/molokai
 
 "bigger font
 "set guifont=Monospace\ 11
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+if has('unix')
+  set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
+else
+  set guifont=Ubuntu_Mono_derivative_Powerlin:h12:cANSI
+endif
