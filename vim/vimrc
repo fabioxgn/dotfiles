@@ -30,6 +30,13 @@ filetype plugin indent on    " required
 filetype on
 syntax enable
 
+" use the system clipboard
+if has('unix')
+  set clipboard=unnamedplus
+else
+  set clipboard=unnamed
+endif
+
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
