@@ -60,6 +60,7 @@ autocmd FileType * autocmd BufWritePre <buffer> StripWhitespace
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -87,7 +88,10 @@ set guioptions-=T "removes toolbar
 set guioptions-=m "removes menu bar"
 set ts=2 " Set tabs to 2 spaces
 set sw=2
-set wildmenu " Shows popup menu on <tab> completion
+
+" Shows popup menu on <tab> completion
+set wildmenu
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Use spaces for ruby
 autocmd FileType ruby set expandtab
