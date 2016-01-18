@@ -1,3 +1,12 @@
+### Shortcuts
+
+- Ctrl + t: Toogle NERDTree
+- Ctrl + h: Previous buffer
+- Ctrl + l: Next buffer
+- Ctrl + q: Close current buffer
+- Ctrl + s: Save current buffer
+- Ctrl + a: Select all
+
 ### Windows
 
 - Install Vundle: https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows
