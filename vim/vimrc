@@ -59,7 +59,6 @@ let g:syntastic_check_on_wq = 0
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2 " always displays de airline bar
 
-
 if has('unix')
   let g:airline_powerline_fonts = 1
   if !exists('g:airline_symbols')
@@ -145,10 +144,9 @@ endif
 colorscheme molokai/colors/molokai
 
 "bigger font
-"set guifont=Monospace\ 11
 if has('unix')
   set guifont=Monaco\ for\ Powerline\ Normal\ 13
 else
-  set guifont=Monaco_for_Powerline:h13:cANSI
+  set guifont=Consolas:h14:cANSI
 endif
 
