@@ -32,6 +32,11 @@ filetype plugin indent on    " required
 filetype on
 syntax enable
 
+" Search
+set incsearch
+set ignorecase
+set smartcase
+
 " use the system clipboard
 if has('unix')
   set clipboard=unnamedplus
