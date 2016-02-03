@@ -22,9 +22,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-easytags'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/nerdtree'
+if has('unix')
+  Plugin 'xolox/vim-easytags'
+end
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
