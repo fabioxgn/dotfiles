@@ -21,10 +21,10 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
 Plugin 'xolox/vim-easytags'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'slim-template/vim-slim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -108,11 +108,24 @@ let g:session_persist_font = 0
 let g:session_persist_colors = 0
 
 " My Custom configs
+set backspace=indent,eol,start " make backspace behave in a sane manner
+set nocompatible " disables compatibility with legacy vi
+set encoding=utf-8
 set number " displays line numbers
+
 set guioptions-=T "removes toolbar
 set guioptions-=m "removes menu bar"
+
 set ts=2 " Set tabs to 2 spaces
-set sw=2
+set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
+set sw=2 " number of spaces to use for indent and unindent
+set showmatch " show matching braces
+set autoindent " automatically set indent of new line
+set smartindent
+
+" moving up and down work as you would expect
+nnoremap <silent> j gj
+nnoremap <silent> k gk
 
 " Shows popup menu on <tab> completion
 set wildmenu
