@@ -150,7 +150,11 @@ map <C-s> :w<CR>
 nnoremap <C-a> ggVG
 
 " Open current file on chrome
-nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
+if has('unix')
+  nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
+else
+  nnoremap <F5> :silent update<Bar>silent !start "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" %:p &<CR>
+endif
 
 " Disable beeping
 set noerrorbells visualbell t_vb=
