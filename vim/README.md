@@ -11,6 +11,7 @@
 ### Markdown preview
 
 For markdown preview use <F5> plus this extension on chrome: [Markdown preview plus](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl)
+Obs: É necessário ir nas extensões do Chrome e permitir que a extensão acesse URLs de arquivos.
 
 ### Windows
 
