@@ -149,6 +149,9 @@ map <C-s> :w<CR>
 " Ctrl + a select all
 nnoremap <C-a> ggVG
 
+" Open current file on chrome
+nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
+
 " Disable beeping
 set noerrorbells visualbell t_vb=
 if has('autocmd')

@@ -6,6 +6,11 @@
 - Ctrl + q: Close current buffer
 - Ctrl + s: Save current buffer
 - Ctrl + a: Select all
+- F5: Open current file on browser
+
+### Markdown preview
+
+For markdown preview use <F5> plus this extension on chrome: [Markdown preview plus](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl)
 
 ### Windows
 
