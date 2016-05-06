@@ -24,6 +24,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-commentary'
 if has('unix')
   Plugin 'xolox/vim-easytags'
 end
@@ -154,6 +155,10 @@ if has('unix')
   nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
 else
   nnoremap <F5> :silent update<Bar>silent !start "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" %:p &<CR>
+endif
+
+if $PATH !~ "\.rbenv"
+  let $PATH= $HOME . "/.rbenv/shims:" . $HOME . "/.rbenv/bin:" . $PATH
 endif
 
 " Disable beeping
