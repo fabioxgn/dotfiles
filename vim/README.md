@@ -14,12 +14,14 @@ Obs: É necessário ir nas extensões do Chrome e permitir que a extensão acess
 
 ### Linux
 
-- Clone the repository, ex in `~/dev/dotfiles` and then:
-
+- Clone the repository, ex in `~/dev/dotfiles`
+- Init the submodules: `git submodule update --init`
+- Create the symbolic links as below:
 ```
 ln -s ~/dev/dotfiles/vim ~/.vim
 ln -s ~/dev/dotfiles/vim/vimrc ~/.vim/.vimrc
 ```
+- Start vim and execute `:PluginInstall`
 
 ### Windows
 
