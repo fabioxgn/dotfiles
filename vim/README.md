@@ -5,13 +5,21 @@
 - Ctrl + l: Next buffer
 - Ctrl + q: Close current buffer
 - Ctrl + s: Save current buffer
-- Ctrl + a: Select all
 - F5: Open current file on browser
 
 ### Markdown preview
 
 For markdown preview use <F5> plus this extension on chrome: [Markdown preview plus](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl)
 Obs: É necessário ir nas extensões do Chrome e permitir que a extensão acesse URLs de arquivos.
+
+### Linux
+
+- Clone the repository, ex in `~/dev/dotfiles` and then:
+
+```
+ln -s ~/dev/dotfiles/vim ~/.vim
+ln -s ~/dev/dotfiles/vim/vimrc ~/.vim/.vimrc
+```
 
 ### Windows
 
